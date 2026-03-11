@@ -20,7 +20,7 @@ jobs:
 
       - name: Deploy to ECS
         run: |
-          ssh -o StrictHostKeyChecking=no ubuntu@ec2-15-134-36-158 << 'EOF'
+          ssh -o StrictHostKeyChecking=no ubuntu@15.134.36.158 << 'EOF'
             cd /var/www/P4_CV  
             sudo git pull origin main
             # Restart Nginx or any other service if needed
